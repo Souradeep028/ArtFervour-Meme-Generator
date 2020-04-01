@@ -1,0 +1,46 @@
+body{
+  padding-top: 2%;
+}
+
+.btn-clr{
+  background-color: #efefef;
+  color: rgb(0, 0, 0);
+  border: none;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-clr.btn:hover, .btn:active{
+  background-color: rgba(49, 49, 49);
+  color: #fff;
+  border: none;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.setting-value {
+	text-align: center;
+	font-weight: bold;
+}
+
+img#start-image {
+	position: absolute;
+	left: -10000px;
+	top: -10000px;
+}
+
+#meme{
+  border:1px solid;
+}
+
+.card{
+  border:2px solid !important;
+}
+
+.card-header{
+  border-bottom: 2px solid !important;
+}
+
+label{
+  font-weight: bold;
+}
