@@ -18,13 +18,6 @@
 <body>
 	<img src="img/af.png" alt="Logo" class="logo">
 	<div class="container">
-		<!-- Page Heading Start -->
-		<div class="page-header">
-			<!-- <h4 style="text-align:center;"> Create your awesome Meme now!</h4> -->
-		</div>
-		<br>
-		<!-- Page Heading End -->
-
 		<!-- Left Part of Page Start -->
 		<div class="main-container">
 			<div class="col-md-5" style="display: block; margin:auto;">
@@ -33,10 +26,15 @@
 				<canvas id="meme" class="img-thumbnail img-fluid">
 					Unfortunately your browser does not support canvas.
 				</canvas>
+				<div id="img-result">
+					<h6 style="text-align: center; font-weight: bold;">Meme Generated</h6>
+					<img src="" alt="" id="generated" class="img-thumbnail img-fluid">
+					<h6 style="text-align: center; font-weight: bold; margin-top: 14px;">Right click or long press on image to save it!</h6>
+				</div>
 				<!-- END: Canvas rendering of generated Meme -->
 
 				<hr />
-				<h6 style="text-align: center; font-weight: bold;">Choose Painting</h6>
+				<h6 style="text-align: center; font-weight: bold;" id="choose">Choose Painting</h6>
 				<hr />
 
 				<div class="select-painting">
@@ -47,6 +45,8 @@
 				</div>
 
 				<hr />
+
+				<div id="img-text">
 
 				<label class="control-label" for="text_top">Top Text:</label>
 				<div class="form-group">
@@ -62,7 +62,7 @@
 
 				<hr />
 
-				<!-- Slider for Text-1 offset from top : START -->
+					<!-- Slider for Text-1 offset from top : START -->
 				<div class="form-group">
 					<div class="row">
 						<label class="control-label col-md-4" for="text_top_offset">Top position:</label>
@@ -95,12 +95,13 @@
 
 				<!-- Download Link Start -->
 				<a href="#" class="btn btn-clr btn-block" id="download_meme" style="margin-top:10px;">
-					<i class="fa fa-download" aria-hidden="true"></i> Download
+					<i class="fa fa-download" aria-hidden="true"></i> Generate Meme!
 				</a>
 
 				<img id="start-image" src="img/image01.jpg" alt="Loading..." />
 				<!-- Download Link End -->
 				<p>&nbsp;</p>
+			</div>
 			</div>
 			<!-- Left Part of Page End -->
 
@@ -234,6 +235,7 @@
 		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 	<script type="text/javascript"
 		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 
 </body>

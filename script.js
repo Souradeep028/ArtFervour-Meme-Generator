@@ -7,6 +7,8 @@ $(document).ready(function(){
   let fontSize = parseInt( $('#text_font_size').val() );
   let memeSize = parseInt( $('#canvas_size').val() );
 
+  $("#img-result").hide();
+
   // Main drawing function
   function drawMeme()
   {
@@ -100,24 +102,40 @@ $(document).ready(function(){
   });
   
   $('#p1').click(() => {
+    $('#meme').show();
+    $('#img-text').show();
+    $('#choose').text('Choose Painting')
+    $("#img-result").hide();
     let p1 = $('#p1').attr('src');
     img.src = p1;
     window.setTimeout(function(){drawMeme()}, 100);
   });
   
   $('#p2').click(() => {
+    $('#meme').show();
+    $('#img-text').show();
+    $('#choose').text('Choose Painting')
+    $("#img-result").hide();
     let p2 = $('#p2').attr('src');
     $('#start-image').attr('src', p2);
     window.setTimeout(function(){drawMeme()}, 100);
   });
   
   $('#p3').click(() => {
+    $('#meme').show();
+    $('#img-text').show();
+    $('#choose').text('Choose Painting')
+    $("#img-result").hide();
     let p3 = $('#p3').attr('src');
     $('#start-image').attr('src', p3);
     window.setTimeout(function(){drawMeme()}, 100);
   });
 
   $('#p4').click(() => {
+    $('#meme').show();
+    $('#img-text').show();
+    $('#choose').text('Choose Painting')
+    $("#img-result").hide();
     let p3 = $('#p4').attr('src');
     $('#start-image').attr('src', p3);
     window.setTimeout(function(){drawMeme()}, 100);
@@ -156,19 +174,16 @@ $(document).ready(function(){
   });
 
   $('#download_meme').click(function(e){
-    $(this).attr('href', canvas.toDataURL("image/jpeg", 0.104));
-    // let dataURI = canvas.toDataURL("image/jpeg", 0.15)
-    console.log(canvas.toDataURL("image/jpeg", 0.104));
-    // var blob = ImageSaver.make_blob(dataURI);
-    // var tempUrl = URL.createObjectURL(blob);
-		$(this).attr('download', 'meme.jpg');
+    let URI = canvas.toDataURL("image/jpeg", 0.2)
+    $('#generated').attr('src', URI);
+    $('#meme').hide();
+    $('#img-text').hide();
+    $('#choose').text('Create Another - Choose Painting')
+    $("#img-result").show();
+    // $(this).attr('href', URI);
+    // console.log(test);
+		// $(this).attr('download', 'meme.jpg');
 	});
-
-  // replace this with a server-side processing method
-	// $('#download_meme').click(function(e){
-	// 	$(this).attr('href', canvas.toDataURL());
-	// 	$(this).attr('download', 'meme.jpg');
-	// });
 
 	// init at startup
 	window.setTimeout(function(){
