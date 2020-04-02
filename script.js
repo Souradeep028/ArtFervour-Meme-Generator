@@ -156,7 +156,8 @@ $(document).ready(function(){
   });
 
   $('#download_meme').click(function(e){
-		$(this).attr('href', canvas.toDataURL());
+    $(this).attr('href', canvas.toDataURL("image/jpeg", 0.18));
+    console.log(canvas.toDataURL("image/jpeg", 0.1));
 		$(this).attr('download', 'meme.jpg');
 	});
 
