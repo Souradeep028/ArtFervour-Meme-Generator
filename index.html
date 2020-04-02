@@ -36,7 +36,7 @@
 				<!-- END: Canvas rendering of generated Meme -->
 
 				<hr />
-					<h6 style="text-align: center; font-weight: bold;">Choose Painting</h6>
+				<h6 style="text-align: center; font-weight: bold;">Choose Painting</h6>
 				<hr />
 
 				<div class="select-painting">
@@ -62,6 +62,37 @@
 
 				<hr />
 
+				<!-- Slider for Text-2 offset from bottom : START -->
+				<div class="form-group">
+					<div class="row">
+						<label class="control-label col-md-4" for="text_bottom_offset">Offset from Top:</label>
+						<div class="col-md-6">
+							<input style="width:100%" id="text_bottom_offset" type="range" min="0" max="500"
+								value="450" />
+						</div>
+						<div class="col-md-2 setting-value">
+							<span id="text_bottom_offset__val">450</span>px
+						</div>
+					</div>
+				</div>
+				<!-- Slider for Text-2 offset from bottom : END -->
+
+				<!-- Slider for Text-1 offset from top : START -->
+				<div class="form-group">
+					<div class="row">
+						<label class="control-label col-md-4" for="text_top_offset">Offset from top:</label>
+						<div class="col-md-6">
+							<input style="width:100%" id="text_top_offset" type="range" min="0" max="500" value="50" />
+						</div>
+						<div class="col-md-2 setting-value">
+							<span id="text_top_offset__val">50</span>px
+						</div>
+					</div>
+				</div>
+				<!-- Slider for Text-1 offset from top : END -->
+
+				<hr />
+
 				<!-- Download Link Start -->
 				<a href="#" class="btn btn-clr btn-block" id="download_meme" style="margin-top:10px;">
 					<i class="fa fa-download" aria-hidden="true"></i> Download
@@ -75,7 +106,7 @@
 
 
 			<!-- Right Part of Page Start -->
-			<div class="col-md-7" style="display: none;">
+			<div class="col-md-7">
 
 				<!-- Input for uploading the image : START -->
 				<!-- <div class="row" style="display: none;">
@@ -93,37 +124,6 @@
 				<!-- Inputting the top text : START -->
 
 				<!-- Inputting the top text : END -->
-
-				<!-- Slider for Text-1 offset from top : START -->
-				<div class="form-group" style="display: none;">
-					<div class="row">
-						<label class="control-label col-md-4" for="text_top_offset">Offset from top:</label>
-						<div class="col-md-6">
-							<input style="width:100%" id="text_top_offset" type="range" min="0" max="500" value="50" />
-						</div>
-						<div class="col-md-2 setting-value">
-							<span id="text_top_offset__val">50</span>px
-						</div>
-					</div>
-				</div>
-				<!-- Slider for Text-1 offset from top : END -->
-
-
-
-				<!-- Slider for Text-2 offset from bottom : START -->
-				<div class="form-group" style="display: none;">
-					<div class="row">
-						<label class="control-label col-md-4" for="text_bottom_offset">Offset from Top:</label>
-						<div class="col-md-6">
-							<input style="width:100%" id="text_bottom_offset" type="range" min="0" max="500"
-								value="450" />
-						</div>
-						<div class="col-md-2 setting-value">
-							<span id="text_bottom_offset__val">450</span>px
-						</div>
-					</div>
-				</div>
-				<!-- Slider for Text-2 offset from bottom : END -->
 
 				<!-- <p>&nbsp;</p> -->
 
@@ -213,10 +213,11 @@
 			<!-- Right Part of page : END -->
 		</div>
 	</div>
-	
+
 	<footer>
-		<small style="text-align:center; display: block;">Did you like the meme creator?<br/>Share it with your friends, so they can give it a shot!</small>
-		<br/>
+		<small style="text-align:center; display: block;">Did you like the meme creator?<br />Share it with your
+			friends, so they can give it a shot!</small>
+		<br />
 		<div style="display: table; margin:auto;">
 			<a href="whatsapp://send?text=https://afmeme.artfervour.ga/"><img src="/whatsapp.png" alt=""
 					style="height: 28px; width: 28px; display: inline; margin:auto; margin-right:10px;"></a>
