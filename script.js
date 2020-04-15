@@ -8,6 +8,7 @@ $(document).ready(function(){
   let memeSize = parseInt( $('#canvas_size').val() );
 
   $("#img-result").hide();
+  $("#pnew").hide();
 
   // Main drawing function
   function drawMeme()
@@ -106,6 +107,7 @@ $(document).ready(function(){
     $('#img-text').show();
     $('#choose').text('Choose Painting')
     $("#img-result").hide();
+    $("#pnew").hide();
     let p1 = $('#p1').attr('src');
     img.src = p1;
     window.setTimeout(function(){drawMeme()}, 100);
@@ -116,6 +118,7 @@ $(document).ready(function(){
     $('#img-text').show();
     $('#choose').text('Choose Painting')
     $("#img-result").hide();
+    $("#pnew").hide();
     let p2 = $('#p2').attr('src');
     $('#start-image').attr('src', p2);
     window.setTimeout(function(){drawMeme()}, 100);
@@ -126,6 +129,7 @@ $(document).ready(function(){
     $('#img-text').show();
     $('#choose').text('Choose Painting')
     $("#img-result").hide();
+    $("#pnew").hide();
     let p3 = $('#p3').attr('src');
     $('#start-image').attr('src', p3);
     window.setTimeout(function(){drawMeme()}, 100);
@@ -136,6 +140,7 @@ $(document).ready(function(){
     $('#img-text').show();
     $('#choose').text('Choose Painting')
     $("#img-result").hide();
+    $("#pnew").hide();
     let p3 = $('#p4').attr('src');
     $('#start-image').attr('src', p3);
     window.setTimeout(function(){drawMeme()}, 100);
@@ -180,6 +185,7 @@ $(document).ready(function(){
     $('#img-text').hide();
     $('#choose').text('Create Another - Choose Painting')
     $("#img-result").show();
+    $("#pnew").show();
     // $(this).attr('href', URI);
     // console.log(test);
 		// $(this).attr('download', 'meme.jpg');
